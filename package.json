@@ -16,9 +16,9 @@
     "db:auth": "node --env-file=.env scripts/siapkan-auth.js",
     "auth:test": "node --env-file=.env scripts/uji-auth.js",
     "db:migrate": "node --env-file=.env scripts/migrasi-aplikasi.js",
-    "db:migrate:cloud": "node --env-file=.env.cloud scripts/migrasi-aplikasi.js cloud",
+    "db:migrate:cloud": "node --env-file=.env.cloud scripts/migrasi-aplikasi.js --cloud",
     "workflow:test": "node --env-file=.env scripts/uji-alur-transaksi.js",
-    "db:init": "node --env-file=.env scripts/inisialisasi-aplikasi.js ",
+    "db:init": "node --env-file=.env scripts/inisialisasi-aplikasi.js",
     "db:init:cloud": "node --env-file=.env.cloud scripts/inisialisasi-aplikasi.js --cloud",
     "penyedia:verifikasi": "node --env-file=.env scripts/verifikasi-penyedia.js",
     "penyedia:verifikasi:cloud": "node --env-file=.env.cloud scripts/verifikasi-penyedia.js --cloud"
