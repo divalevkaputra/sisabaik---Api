@@ -1,6 +1,5 @@
 import pg from "pg";
 const { Pool } = pg;
-
 const produksi = process.env.NODE_ENV === "production";
 const ssl = process.env.PGSSL ?? "disable";
 
@@ -22,8 +21,11 @@ for (const nama of [
   "PGDATABASE",
   "PGUSER",
   "PGPASSWORD",
+
 ]) {
+
   if (!process.env[nama])
+
     throw new Error(`Konfigurasi ${nama} belum diisi.`);
 }
 
